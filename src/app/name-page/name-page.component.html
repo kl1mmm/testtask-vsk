@@ -1,0 +1,44 @@
+<div class="screen">
+
+  <!--  Не стал строить отдельный компонент для модального окна, так как-->
+  <!--  использовал Bootstrap и все стили с логикой появления-исчезнования-->
+  <!--  уже прописаны в нём.-->
+  <div id="myModal" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Вы действительно хотите добавить {{userName}}?</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Отмена</button>
+          <button type="button" class="btn btn-primary" (click)="addNewName()" data-bs-dismiss="modal">Добавить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  Не стал строить отдельный компонент для модального окна, так как-->
+  <!--  использовал Bootstrap и все стили с логикой появления-исчезнования-->
+  <!--  уже прописаны в нём. Опыт разбиения на компоненты при интересе можно-->
+  <!--  увидеть в другом моём репозитории 'tic-tac-toe'.-->
+
+
+  <h1>Введите имя</h1>
+  <form class="row g-3 nameForm">
+    <div class="col-auto">
+      <label for="newName" class="col-form-label">Name</label>
+      <input type="text" class="form-control" id="newName" name="userName" placeholder="Your name"
+             [(ngModel)]="userName">
+    </div>
+    <div class="col-auto">
+      <button [disabled]="!userName" type="submit" class="btn btn-primary mb-3" data-bs-toggle="modal"
+              data-bs-target="#myModal">Добавить
+      </button>
+    </div>
+  </form>
+  <div class="list-of-names">
+    <h4 class="subTitle">Список имён</h4>
+    <ul>
+      <li *ngFor="let name of namesArr">{{ name }}</li>
+    </ul>
+  </div>
+</div>
