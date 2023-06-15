@@ -36,7 +36,6 @@ form {
   justify-content: center;
   align-items: center;
   align-content: center;
-  text-align: left;
 }
 
 form label {
@@ -45,4 +44,5 @@ form label {
 
 .col-auto {
   width: 75%;
+  text-align: left;
 }
