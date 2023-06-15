@@ -39,10 +39,14 @@ export class CountriesComponent {
     this.countries.push({
       id: this.countries.length + 1,
       name: this.newCountryName,
-      area: this.newCountryArea.replace(/\B(?=(\d{3})+(?!\d))/g, "."),
-      population: this.newCountryPopulation.replace(/\B(?=(\d{3})+(?!\d))/g, "."),
+      area: this.newCountryArea.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."),
+      population: this.newCountryPopulation.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."),
       other: this.newCountryOther
     })
+    this.newCountryName = '';
+    this.newCountryArea = '';
+    this.newCountryPopulation = '';
+    this.newCountryOther = '';
   }
 
   constructor() {
