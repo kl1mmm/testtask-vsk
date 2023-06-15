@@ -1,6 +1,6 @@
 # Добрый день.
 
-Сейчас вы находитесь в репозиторие, выполненное мною тестовое задание от компании "ВСК | Страховой дом", на должность "Стажер JS-разработчик".
+Сейчас вы находитесь в репозиторие, выполненное мною тестовое задание от компании "ВСК Страховой дом", на должность "Стажер JS-разработчик".
 
 В данном случае использовались следующие технологии: Angular, Bootstrap и конечно же HTML, CSS, JS. Таким образом, в данном проекте отображён мой опыт быстрого обучения и получения нвыков работы с технологиями, к которым ранее я не имел отношения: Angular, а также небольшой пример вёрстки и совсем капелька реализации логики работы.
 
@@ -13,7 +13,7 @@
 
 # Good afternoon.
 
-Now you are in the repository, performed by me test task from the company "VSK | Insurance House", on the position of "Trainee JS-developer".
+Now you are in the repository, performed by me test task from the company "VSK Insurance House", on the position of "Trainee JS-developer".
 
 In this case, the following technologies were used: Angular, Bootstrap and of course HTML, CSS, JS. So this project shows my experience of fast learning and learning to work with technologies that I was not involved with before: Angular, as well as a small example of layout and a little bit of implementation of the logic of work.
 
