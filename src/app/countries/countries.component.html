@@ -1,0 +1,78 @@
+<div class="screen">
+  <!--  Не стал строить отдельный компонент для модального окна, так как-->
+  <!--  использовал Bootstrap и все стили с логикой появления-исчезнования-->
+  <!--  уже прописаны в нём.-->
+  <div id="myDialog" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Заполнение таблицы</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3 nameForm">
+            <div class="col-auto">
+              <label for="countryName" class="col-form-label">Страна</label>
+              <input type="text" class="form-control" id="countryName" name="countryName"
+                     placeholder="Название страны" [(ngModel)]="newCountryName">
+            </div>
+            <div class="col-auto">
+              <label for="countryArea" class="col-form-label">Площадь (км²)</label>
+              <input type="number" class="form-control" id="countryArea" name="countryArea"
+                     [(ngModel)]="newCountryArea">
+            </div>
+            <div class="col-auto">
+              <label for="countryPopulation" class="col-form-label">Население (чел.)</label>
+              <input type="number" class="form-control" id="countryPopulation" name="countryPopulation"
+                     [(ngModel)]="newCountryPopulation">
+            </div>
+            <div class="col-auto">
+              <label for="other" class="col-form-label">Прочее</label>
+              <Textarea class="form-control" id="other" name="other" placeholder="Заметки"
+                        [(ngModel)]="newCountryOther"></Textarea>
+            </div>
+            <p>Полностью заполните данные, а после нажмите кнопку "Сохранить изменения"</p>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Закрыть</button>
+          <button [disabled]="newCountryName === '' && newCountryArea === 0 && newCountryPopulation === 0" type="submit"
+                  class="btn btn-primary" (click)="addNewCountry()" data-bs-dismiss="modal">Сохранить изменения
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Не стал строить отдельный компонент для модального окна, так как-->
+  <!--  использовал Bootstrap и все стили с логикой появления-исчезнования-->
+  <!--  уже прописаны в нём. Опыт разбиения на компоненты при интересе можно-->
+  <!--  увидеть в другом моём репозитории 'tic-tac-toe'.-->
+
+  <h1>Страны</h1>
+  <div class="container">
+    <table class="table table-bordered table-hover">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Страна</th>
+        <th scope="col">Площадь</th>
+        <th scope="col">Население</th>
+        <th scope="col">Заметки</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let country of countries">
+        <th scope="row">{{country.id}}</th>
+        <td>{{country.name}}</td>
+        <td>{{country.area}}</td>
+        <td>{{country.population}}</td>
+        <td>{{country.other}}</td>
+      </tr>
+      </tbody>
+    </table>
+    <button type="submit" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#myDialog">Добавить
+      страну
+    </button>
+  </div>
+</div>

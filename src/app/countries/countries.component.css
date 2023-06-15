@@ -1,0 +1,48 @@
+.table {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  align-self: flex-end;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: none;
+}
+
+.modal-footer button {
+  width: 200px;
+  height: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: left;
+}
+
+form label {
+  margin-left: 8px;
+}
+
+.col-auto {
+  width: 75%;
+}
