@@ -1,2 +1,20 @@
 <div class="wrapper">
+
+  <!--  Навигационную панель не выносил в отдельный компонент в связи с использованием Bootstrap: вся стилистика содержится-->
+  <!--  в коде данной библиотеки.-->
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" routerLink="">Домашняя страница</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/name">Имена</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/countries">Страны</a>
+    </li>
+  </ul>
+  <!--  Навигационную панель не выносил в отдельный компонент в связи с использованием Bootstrap: вся стилистика содержится-->
+  <!--  в коде данной библиотеки.-->
+
+  <router-outlet></router-outlet>
 </div>
