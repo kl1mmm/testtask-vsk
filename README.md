@@ -22,6 +22,8 @@ To be honest, it is this framework that has caught me even more Vue.JS with whom
 I hope that we can successfully work with the guys from VSK :)
 Have a good day and have a good mood and ! 
 
+![ВСК](https://github.com/kl1mmm/testtask-vsk/assets/89641101/485599a8-6c95-4e72-8eb1-d93293050ceb)
+
 ----------
 
 # TesttaskVsk
@@ -51,5 +53,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-![ВСК](https://github.com/kl1mmm/testtask-vsk/assets/89641101/485599a8-6c95-4e72-8eb1-d93293050ceb)
