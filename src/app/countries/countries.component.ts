@@ -7,30 +7,30 @@ import {Component} from '@angular/core';
 })
 export class CountriesComponent {
   newCountryName: string = '';
-  newCountryArea: number = 0;
-  newCountryPopulation: number = 0;
+  newCountryArea: string = '';
+  newCountryPopulation: string = '';
   newCountryOther: string = '';
 
   public countries: Array<any> = [
     {
       id: 1,
       name: "Российская Федерация",
-      area: 17098246,
-      population: 144637189,
+      area: '17.098.246',
+      population: '144.637.189',
       other: "Я тут живу."
     },
     {
       id: 2,
       name: "Соединённые Штаты Америки",
-      area: 9826675,
-      population: 301693000,
+      area: '9.826.675',
+      population: '301.693.000',
       other: "Я тут не живу..."
     },
     {
       id: 3,
       name: "Китайская Народная Республика",
-      area: 9596961,
-      population: 1411750000,
+      area: '9.596.961',
+      population: '1.411.750.000',
       other: "Я тут был, но не жил."
     },
   ];
@@ -39,8 +39,8 @@ export class CountriesComponent {
     this.countries.push({
       id: this.countries.length + 1,
       name: this.newCountryName,
-      area: this.newCountryArea,
-      population: this.newCountryPopulation,
+      area: this.newCountryArea.replace(/\B(?=(\d{3})+(?!\d))/g, "."),
+      population: this.newCountryPopulation.replace(/\B(?=(\d{3})+(?!\d))/g, "."),
       other: this.newCountryOther
     })
   }
