@@ -7,7 +7,7 @@
 Если честно, именно данный фреймворк меня зацепил даже больше Vue.JS с которым я работал ранее, посему я безумно благодарен данной компании и команде, которые дали мне толчок для соприкосновения и изучения данной технологии... Бросать её дальнейшее постижение я не планирую).
 
 Надеюсь, что мы сможем успешно поработать работу с ребятами из ВСК :)
-Всем удачного дня и хорошего настроения и ! 
+Всем удачного дня и хорошего настроения! 
 
 ----------
 
@@ -20,7 +20,7 @@ In this case, the following technologies were used: Angular, Bootstrap and of co
 To be honest, it is this framework that has caught me even more Vue.JS with whom I worked earlier, so I am incredibly grateful to this company and team, which gave me the impetus to contact and study this technology... I do not plan to throw it further understanding).
 
 I hope that we can successfully work with the guys from VSK :)
-Have a good day and have a good mood and ! 
+Have a good day and have a good moo! 
 
 ![ВСК](https://github.com/kl1mmm/testtask-vsk/assets/89641101/485599a8-6c95-4e72-8eb1-d93293050ceb)
 
